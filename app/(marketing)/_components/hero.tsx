@@ -1,4 +1,3 @@
-import ImageHero from "@/components/hero-image";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +33,6 @@ export const Hero = () => {
       </div>
       <div className="col-span-4  ">
      
-        <ImageHero/>
       </div>
 
       <div className="flex flex-col col-span-2 justify-center bg-white px-6 py-16 text-black md:px-16 md:py-24 lg:py-32">
