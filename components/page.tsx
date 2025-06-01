@@ -4,10 +4,9 @@ import {
 } from "@storyblok/react/rsc";
 
 export default function Page({ blok }: any) {
-  console.log()
   return (
     <main
-      className="w-full grid grid-cols-1 md:grid-cols-6"
+      className="w-full mt-4 grid grid-cols-1 md:grid-cols-6"
       {...storyblokEditable(blok)}
     >
       {blok.body.map((nestedBlok: any) => (

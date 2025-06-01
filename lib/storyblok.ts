@@ -13,8 +13,4 @@ export const getStoryblokApi = storyblokInit({
     image: ImageHero,
     description: HeroDescription,
   },
-  apiOptions: {
-    endpoint:
-      "https://api.storyblok.com/v2/cdn/stories/hero?version=draft&token=f1hKyQCx6QZfN8YFH75GSwtt&cv=1748537294",
-  },
 });
