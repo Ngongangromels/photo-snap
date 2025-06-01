@@ -1,7 +1,17 @@
-import { storyblokEditable } from "@storyblok/react/rsc";
+import { SbBlokData, storyblokEditable } from "@storyblok/react/rsc";
 import Image from "next/image";
 
-export default function ImageHero({ blok }: any) {
+interface SbImageData extends SbBlokData {
+  image: {
+    filename: string
+  };
+}
+
+interface ImageHeroPgae {
+  blok: SbImageData
+}
+
+export default function ImageHero({ blok }: ImageHeroPgae) {
   return (
     <div className="col-span-4" {...storyblokEditable(blok)}>
       <Image

@@ -1,9 +1,23 @@
-import { storyblokEditable } from "@storyblok/react/rsc";
+import { SbBlokData, storyblokEditable } from "@storyblok/react/rsc";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+interface SbDescriptionData extends SbBlokData {
+  _uid: string;
+  title: string;
+  description: string;
+  color: string;
+  lien: {
+    url: string
+  };
+}
 
-export default function HeroDescription({blok}: any){
+interface HeroDescriptionProps {
+  blok: SbDescriptionData
+}
+
+
+export default function HeroDescription({blok}: HeroDescriptionProps){
     return (
       <div {...storyblokEditable(blok)} className=" col-span-2">
         <div
